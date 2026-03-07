@@ -15,12 +15,10 @@ a{text-decoration:none;color:inherit;}
 ::-webkit-scrollbar-track{background:var(--ink);}
 ::-webkit-scrollbar-thumb{background:var(--gold);}
 
-/* SCARCITY BAR */
 .scarcity-bar{background:var(--gold);padding:10px 56px;display:flex;justify-content:center;align-items:center;gap:16px;position:fixed;top:0;left:0;right:0;z-index:300;}
 .scarcity-bar-text{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:var(--ink);font-weight:500;}
 .scarcity-dot{width:6px;height:6px;border-radius:50%;background:var(--ink);opacity:0.4;}
 
-/* NAV */
 nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:20px 56px;background:rgba(10,10,10,0.97);border-bottom:1px solid var(--border);}
 .nav-logo{display:flex;align-items:center;gap:14px;}
 .logo-mark{width:36px;height:36px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:15px;font-weight:900;color:var(--ink);flex-shrink:0;}
@@ -31,26 +29,23 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .nav-links a{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mist);transition:color 0.25s;}
 .nav-links a:hover{color:var(--gold);}
 
-/* BUTTONS */
 .btn-gold{display:inline-block;background:var(--gold);color:var(--ink);padding:14px 32px;font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;transition:background 0.25s,transform 0.2s;cursor:pointer;border:none;}
 .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);}
 .btn-line{display:inline-block;border:1px solid var(--mid);color:var(--mist);padding:14px 32px;font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;transition:border-color 0.25s,color 0.25s;}
 .btn-line:hover{border-color:var(--gold);color:var(--gold);}
 
-/* EYEBROW */
 .eyebrow{display:flex;align-items:center;gap:14px;font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold);}
 .h2{font-family:"Playfair Display",serif;font-size:clamp(32px,4vw,56px);font-weight:700;line-height:1.08;margin-bottom:16px;}
 .h2 em{font-style:italic;color:var(--gold);}
 .lead{font-size:16px;line-height:1.85;color:var(--mist);}
-.divider{height:1px;background:linear-gradient(to right,transparent,var(--border),transparent);}
+
 .sec{padding:100px 56px;}
 .sec-dark{background:var(--ink);}
 .sec-darker{background:#070707;}
 .sec-mid{background:var(--ink2);}
 .sec-green{background:var(--green);}
 
-/* HERO */
 .hero{min-height:100vh;padding:178px 56px 88px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:68px;align-items:center;position:relative;overflow:hidden;}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 72% 50%,rgba(26,58,42,0.4),transparent),radial-gradient(ellipse 35% 45% at 18% 80%,rgba(201,168,76,0.06),transparent);pointer-events:none;}
 .hero-eye{display:flex;align-items:center;gap:14px;font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;}
@@ -59,6 +54,7 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .hero-h1 em{font-style:italic;color:var(--gold);}
 .hero-p{font-size:17px;line-height:1.85;color:var(--mist);max-width:450px;margin-bottom:44px;}
 .hero-btns{display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+
 .hero-panel{background:var(--green);border:1px solid rgba(201,168,76,0.22);padding:42px 36px;position:relative;}
 .hero-panel::before{content:"";position:absolute;inset:11px;border:1px solid rgba(201,168,76,0.08);pointer-events:none;}
 .panel-lbl{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);opacity:0.7;margin-bottom:26px;}
@@ -70,14 +66,12 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .mkt{display:flex;align-items:center;gap:12px;font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.18em;color:var(--mist);}
 .mkt-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
 
-/* MARQUEE */
 .marquee{background:var(--gold);padding:12px 0;overflow:hidden;white-space:nowrap;}
 .marquee-track{display:inline-flex;animation:scroll 32s linear infinite;}
 .mi{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.38em;text-transform:uppercase;color:var(--ink);padding:0 30px;}
 .ms{color:rgba(10,10,10,0.3);}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* PHILOSOPHY */
 .phil-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:56px;}
 .pb{font-size:16px;line-height:1.9;color:var(--mist);margin-bottom:20px;}
 .pull{font-family:"Playfair Display",serif;font-size:21px;font-style:italic;color:var(--gold);line-height:1.65;border-left:2px solid var(--gold);padding-left:24px;margin:40px 0;}
@@ -88,7 +82,6 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .pt{font-family:"Playfair Display",serif;font-size:19px;font-weight:700;margin-bottom:6px;}
 .pb2{font-size:13px;line-height:1.7;color:var(--mid);}
 
-/* SERVICES */
 .svc-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px;}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
 .svc{background:var(--ink3);padding:36px 28px;position:relative;overflow:hidden;transition:background 0.3s;}
@@ -101,83 +94,13 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .pills{display:flex;flex-wrap:wrap;gap:5px;}
 .pill{font-family:"DM Mono",monospace;font-size:8px;letter-spacing:0.18em;padding:3px 9px;border:1px solid var(--border);color:var(--mid);}
 
-/* CASE STUDY */
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-.case-badge{display:inline-flex;align-items:center;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);padding:7px 16px;margin-bottom:24px;}
-.case-badge span{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.38em;color:var(--gold);text-transform:uppercase;}
-.cbody{font-size:15px;line-height:1.85;color:rgba(245,240,232,0.75);margin-bottom:16px;}
-.cstats{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
-.cs{background:rgba(0,0,0,0.38);padding:28px 22px;border-top:2px solid rgba(201,168,76,0.25);}
-.csn{font-family:"Playfair Display",serif;font-size:42px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:5px;}
-.csl{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(245,240,232,0.5);}
-
-/* TABS */
-.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:44px;}
-.tab-btn{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--mid);padding:13px 24px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color 0.25s,border-color 0.25s;}
-.tab-btn:hover{color:var(--gold);}
-.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
-.tab-pane{display:none;}
-.tab-pane.active{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
-
-/* EMAIL CARDS — expandable */
-.ec{background:var(--ink2);overflow:hidden;transition:transform 0.3s;cursor:pointer;}
-.ec:hover{transform:translateY(-3px);}
-.ech{padding:15px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
-.ety{font-family:"DM Mono",monospace;font-size:8px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;}
-.era{font-family:"DM Mono",monospace;font-size:9px;color:#7aaa6a;letter-spacing:0.1em;}
-.ecb{padding:22px 20px;}
-.esub{font-family:"Playfair Display",serif;font-size:15px;font-weight:700;line-height:1.3;margin-bottom:7px;}
-.eprev{font-size:12px;color:var(--mid);line-height:1.6;margin-bottom:15px;}
-.etags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;}
-.et{font-family:"DM Mono",monospace;font-size:8px;letter-spacing:0.18em;text-transform:uppercase;padding:3px 7px;background:#1a1a1a;color:var(--mid);}
-.et.ok{background:rgba(74,103,65,0.18);color:#7aaa6a;border:1px solid rgba(74,103,65,0.35);}
-.read-btn{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(201,168,76,0.3);padding:6px 14px;cursor:pointer;transition:background 0.2s,border-color 0.2s;width:100%;}
-.read-btn:hover{background:rgba(201,168,76,0.08);border-color:var(--gold);}
-
-/* EMAIL MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:1000;display:none;align-items:center;justify-content:center;padding:40px 20px;}
-.modal-overlay.open{display:flex;}
-.modal{background:#0f0f0f;border:1px solid var(--border);max-width:720px;width:100%;max-height:88vh;overflow-y:auto;position:relative;}
-.modal-top{background:var(--green);padding:28px 36px;border-bottom:1px solid rgba(201,168,76,0.2);display:flex;justify-content:space-between;align-items:flex-start;}
-.modal-meta{flex:1;}
-.modal-service{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
-.modal-subject{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;line-height:1.25;color:var(--paper);}
-.modal-preview{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.12em;color:var(--mist);opacity:0.7;margin-top:6px;}
-.modal-close{background:none;border:1px solid rgba(255,255,255,0.15);color:var(--mist);width:36px;height:36px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:20px;transition:border-color 0.2s,color 0.2s;}
-.modal-close:hover{border-color:var(--gold);color:var(--gold);}
-.modal-body{padding:36px;}
-.modal-compliance{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);}
-.email-content{font-size:15px;line-height:1.9;color:var(--mist);}
-.email-content p{margin-bottom:18px;}
-.email-content .greeting{font-family:"Playfair Display",serif;font-size:17px;color:var(--paper);}
-.email-content .cta-block{background:var(--green);border:1px solid rgba(201,168,76,0.2);padding:20px 24px;margin:24px 0;}
-.email-content .cta-block p{margin:0;font-size:14px;}
-.email-content .sign-off{font-family:"Playfair Display",serif;font-style:italic;color:var(--gold);font-size:16px;}
-.email-content .disclaimer{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.1em;color:var(--mid);border-top:1px solid var(--border);padding-top:16px;margin-top:24px;line-height:1.6;}
-.email-content strong{color:var(--paper);font-weight:500;}
-.email-content h4{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;color:var(--paper);margin:24px 0 10px;}
-
-/* COMPLIANCE */
-.comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:52px;}
-.cc{background:var(--ink3);padding:40px 32px;position:relative;overflow:hidden;}
-.cc::after{content:"";position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(201,168,76,0.07),transparent);}
-.cflag{font-size:32px;margin-bottom:15px;display:block;}
-.creg{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:5px;}
-.ctitle{font-family:"Playfair Display",serif;font-size:21px;font-weight:700;margin-bottom:12px;}
-.cbod2{font-size:13px;line-height:1.75;color:var(--mid);margin-bottom:18px;}
-.clist{list-style:none;display:flex;flex-direction:column;gap:7px;}
-.clist li{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.15em;color:var(--mist);display:flex;align-items:center;gap:10px;}
-.clist li::before{content:"✓";color:var(--gold);}
-
-/* PROCESS */
-.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative;}
-.proc-grid::before{content:"";position:absolute;top:26px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(to right,transparent,rgba(201,168,76,0.3),transparent);}
-.proc{padding:0 24px;text-align:center;}
-.pnum{width:52px;height:52px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:19px;font-weight:700;color:var(--gold);margin:0 auto 22px;background:var(--ink2);position:relative;z-index:1;}
-.proctit{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;margin-bottom:9px;}
+/* HOW IT WORKS SECTION */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px;}
+.proc{background:var(--ink3);padding:36px 28px;text-align:center;}
+.pnum{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.32em;color:var(--gold);margin-bottom:14px;display:block;}
+.proctit{font-family:"Playfair Display",serif;font-size:18px;font-weight:700;margin-bottom:10px;}
 .procb{font-size:13px;line-height:1.7;color:var(--mid);}
 
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:300px 1fr;gap:80px;align-items:start;}
 .founder-card{position:sticky;top:110px;}
 .fi{width:100%;aspect-ratio:2/3;border:1px solid #2a2a2a;overflow:hidden;margin-bottom:20px;}
@@ -191,146 +114,53 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;justify-cont
 .ck{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--mist);}
 .cv{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.15em;color:var(--gold);text-align:right;}
 
-/* PRICING */
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+.case-badge{display:inline-flex;align-items:center;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);padding:7px 16px;margin-bottom:24px;}
+.case-badge span{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.38em;color:var(--gold);text-transform:uppercase;}
+.cbody{font-size:15px;line-height:1.85;color:rgba(245,240,232,0.75);margin-bottom:16px;}
+.cstats{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.cs{background:rgba(0,0,0,0.38);padding:28px 22px;border-top:2px solid rgba(201,168,76,0.25);}
+.csn{font-family:"Playfair Display",serif;font-size:42px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:5px;}
+.csl{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(245,240,232,0.5);}
+
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
 .pc{background:var(--ink3);padding:44px 32px;transition:background 0.3s;}
 .pc:hover{background:#121212;}
 .pc.feat{background:var(--green);border-top:2px solid var(--gold);}
-.pstar{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.38em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:block;}
-.ptier{font-family:"Playfair Display",serif;font-size:23px;font-weight:700;margin-bottom:5px;}
-.psub{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mid);margin-bottom:26px;display:block;}
 .pamt{font-family:"Playfair Display",serif;font-size:50px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:4px;}
-.pper{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.2em;color:var(--mid);margin-bottom:30px;display:block;}
-.pfeats{list-style:none;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;margin-bottom:30px;display:flex;flex-direction:column;gap:10px;}
-.pfeats li{font-size:13px;line-height:1.6;color:var(--mist);display:flex;gap:10px;align-items:flex-start;}
-.pfeats li::before{content:"→";color:var(--gold);flex-shrink:0;}
 
-/* AUDIT */
 .audit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
 .audit-form{display:flex;flex-direction:column;gap:12px;margin-top:32px;}
-.af-group{display:flex;flex-direction:column;gap:6px;}
-.af-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);}
-.af-input,.af-select{background:#111;border:1px solid var(--border);color:var(--paper);font-family:"DM Sans",sans-serif;font-size:14px;padding:12px 16px;outline:none;transition:border-color 0.25s;width:100%;}
-.af-input:focus,.af-select:focus{border-color:var(--gold);}
-.af-select option{background:#111;color:var(--paper);}
-.af-note{font-size:12px;color:var(--mid);font-family:"DM Mono",monospace;letter-spacing:0.12em;margin-top:4px;}
 .audit-right{background:var(--green);border:1px solid rgba(201,168,76,0.18);padding:44px 40px;}
-.audit-step{display:flex;gap:20px;margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid rgba(201,168,76,0.1);}
-.audit-step:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
-.audit-step-num{font-family:"Playfair Display",serif;font-size:32px;font-weight:900;color:var(--gold);line-height:1;flex-shrink:0;width:36px;}
-.audit-step-body{}
-.audit-step-title{font-family:"Playfair Display",serif;font-size:16px;font-weight:700;margin-bottom:5px;}
-.audit-step-text{font-size:13px;line-height:1.7;color:rgba(245,240,232,0.7);}
 
-/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
-.contact-intro{font-size:16px;line-height:1.85;color:var(--mist);margin-bottom:36px;}
-.contact-methods{display:flex;flex-direction:column;gap:2px;}
-.cmethod{display:flex;align-items:center;gap:20px;background:var(--ink3);padding:22px 24px;transition:background 0.3s;text-decoration:none;}
-.cmethod:hover{background:#141414;}
-.cmethod-icon{width:44px;height:44px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
-.cmethod-icon svg{width:22px;height:22px;}
-.cmethod-icon.tg-icon{background:rgba(42,152,208,0.12);border-color:rgba(42,152,208,0.3);}
-.cmethod-icon.li-icon{background:rgba(10,102,194,0.12);border-color:rgba(10,102,194,0.3);}
-.cmethod-icon.cal-icon{background:rgba(201,168,76,0.1);border-color:rgba(201,168,76,0.25);}
-.cmethod-icon.em-icon{background:rgba(201,168,76,0.1);border-color:rgba(201,168,76,0.25);}
-.cmethod-info{flex:1;}
-.cmethod-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
-.cmethod-val{font-size:14px;color:var(--mist);}
-.cmethod-arrow{font-family:"DM Mono",monospace;font-size:14px;color:var(--gold);opacity:0.5;}
-.contact-right{background:var(--green);padding:44px 40px;border:1px solid rgba(201,168,76,0.18);}
-.cr-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
-.cr-h3{font-family:"Playfair Display",serif;font-size:28px;font-weight:700;line-height:1.2;margin-bottom:16px;}
-.cr-h3 em{font-style:italic;color:var(--gold);}
-.cr-p{font-size:15px;line-height:1.8;color:rgba(245,240,232,0.75);margin-bottom:28px;}
-.availability{display:flex;align-items:center;gap:12px;margin-bottom:32px;}
-.avail-dot{width:8px;height:8px;border-radius:50%;background:#4aaa3a;animation:blink 2s ease-in-out infinite;}
-@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.4;}}
-.avail-text{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#7aaa6a;}
+.cmethod{display:flex;align-items:center;gap:20px;background:var(--ink3);padding:22px 24px;transition:background 0.3s;text-decoration:none;margin-bottom:2px;}
+.cmethod-icon{width:44px;height:44px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 
-/* FOOTER */
 footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:center;border-top:1px solid var(--border);}
 .fb{display:flex;align-items:center;gap:12px;}
 .fb-mark{width:30px;height:30px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:12px;font-weight:900;color:var(--ink);}
-.fb-name{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--paper);}
-.fc{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.18em;color:var(--mid);text-align:center;}
 .fl{display:flex;gap:24px;justify-content:flex-end;list-style:none;}
 .fl a{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mid);transition:color 0.25s;}
-.fl a:hover{color:var(--gold);}
 
-/* HAMBURGER */
-.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
-.nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
-.nav-mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,0.98);z-index:500;flex-direction:column;align-items:center;justify-content:center;gap:32px;}
-.nav-mobile-menu.open{display:flex;}
-.nav-mobile-menu a{font-family:"DM Mono",monospace;font-size:13px;letter-spacing:0.32em;text-transform:uppercase;color:var(--mist);transition:color 0.2s;}
-.nav-mobile-menu a:hover{color:var(--gold);}
-.nav-mobile-close{position:absolute;top:24px;right:24px;background:none;border:1px solid var(--border);color:var(--mist);width:40px;height:40px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-
-/* ── RESPONSIVE ── */
 @media(max-width:900px){
-  .scarcity-bar{padding:8px 16px;gap:8px;flex-wrap:wrap;justify-content:center;}
-  .scarcity-bar-text{font-size:8px;letter-spacing:0.18em;}
-  .scarcity-dot{display:none;}
-  nav{padding:14px 20px;top:52px;}
+  nav{padding:14px 24px;}
   .nav-links{display:none;}
-  .nav-hamburger{display:flex;}
   .sec{padding:72px 24px;}
-  .hero{grid-template-columns:1fr;padding:160px 24px 72px;gap:44px;min-height:auto;}
+  .hero{grid-template-columns:1fr;padding-top:140px;}
   .hero-panel{display:none;}
-  .hero-h1{font-size:clamp(40px,11vw,70px);}
-  .hero-btns{flex-direction:column;align-items:flex-start;}
-  .btn-gold,.btn-line{width:100%;text-align:center;padding:16px 24px;}
-  .phil-grid{grid-template-columns:1fr;gap:40px;}
-  .svc-header{grid-template-columns:1fr;gap:20px;}
-  .svc-grid{grid-template-columns:1fr;}
-  .tab-pane.active{grid-template-columns:1fr;}
-  .tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .tab-btn{padding:13px 16px;font-size:9px;white-space:nowrap;}
-  .case-grid{grid-template-columns:1fr;gap:40px;}
-  .cstats{grid-template-columns:1fr 1fr;}
-  .comp-grid{grid-template-columns:1fr;}
-  .proc-grid{grid-template-columns:1fr 1fr;gap:32px;}
-  .proc-grid::before{display:none;}
-  .about-grid{grid-template-columns:1fr;gap:40px;}
-  .founder-card{position:static;}
-  .fi{max-width:240px;}
-  .price-grid{grid-template-columns:1fr;}
-  .audit-wrap{grid-template-columns:1fr;gap:48px;}
-  .contact-grid{grid-template-columns:1fr;gap:40px;}
-  footer{grid-template-columns:1fr;gap:24px;padding:40px 24px;text-align:center;}
-  .fl{justify-content:center;flex-wrap:wrap;}
-  .modal{max-height:95vh;}
-  .modal-top{padding:20px 20px;}
-  .modal-subject{font-size:17px;}
-  .modal-body{padding:20px;}
-}
-
-@media(max-width:600px){
-  .scarcity-bar{top:0;padding:7px 12px;}
-  nav{top:44px;}
-  .hero{padding:148px 20px 60px;}
-  .sec{padding:60px 20px;}
-  .h2{font-size:clamp(28px,8vw,44px);}
-  .hero-h1{font-size:clamp(36px,12vw,60px);}
-  .proc-grid{grid-template-columns:1fr;}
-  .cstats{grid-template-columns:1fr 1fr;}
-  .price-grid,[style*="grid-template-columns:1fr 1fr"]{display:block;}
-  [style*="grid-template-columns:1fr 1fr"] > *{margin-bottom:3px;}
-  .audit-form [style*="grid-template-columns:1fr 1fr"]{display:flex;flex-direction:column;}
-  .modal-top{flex-direction:column;gap:12px;}
-  .modal-close{align-self:flex-end;}
+  .about-grid,.audit-wrap,.contact-grid,.price-grid,.svc-grid,.proc-grid,.case-grid{grid-template-columns:1fr;}
+  footer{grid-template-columns:1fr;text-align:center;}
+  .fl{justify-content:center;}
 }
 </style>
 </head>
 <body>
 
 <div class="scarcity-bar">
-  <span class="scarcity-bar-text">Currently Accepting 2 New Clients</span>
+  <span class="scarcity-bar-text">Accepting 2 New Strategic Partners</span>
   <span class="scarcity-dot"></span>
-  <span class="scarcity-bar-text">4–5 Engagements Per Year · Global Suite from $18,000</span>
-  <span class="scarcity-dot"></span>
-  <span class="scarcity-bar-text"><a href="#contact" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px;">Book a Discovery Call →</a></span>
+  <span class="scarcity-bar-text">Global Suite from $18,000</span>
 </div>
 
 <nav>
@@ -346,156 +176,62 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
     <li><a href="#services">Services</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#audit">Risk Assessment</a></li>
     <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <a href="#audit" class="btn-gold" style="padding:10px 20px;">Risk Assessment</a>
 </nav>
 
-<div class="nav-mobile-menu" id="mobile-menu">
-  <button class="nav-mobile-close" onclick="toggleMobileMenu()">✕</button>
-  <a href="#philosophy" onclick="toggleMobileMenu()">Philosophy</a>
-  <a href="#services" onclick="toggleMobileMenu()">Services</a>
-  <a href="#work" onclick="toggleMobileMenu()">Work</a>
-  <a href="#about" onclick="toggleMobileMenu()">About</a>
-  <a href="#audit" onclick="toggleMobileMenu()">Risk Assessment</a>
-  <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
-  <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
-</div>
-
-<section class="hero" id="home">
+<section class="hero">
   <div>
-    <div class="hero-eye">Compliance Architect · Global Pet Wellness</div>
-    <h1 class="hero-h1">Copy that<br><em>converts.</em><br>Assets that<br><em>protect.</em></h1>
-    <p class="hero-p">We don't write emails. We build Regulatory-Shielded, Audit-Proof assets that generate revenue and protect your brand across the US, UK, and Australian markets — owned by you, forever.</p>
+    <div class="hero-eye">Compliance Architect · Pet Wellness</div>
+    <h1 class="hero-h1">Copy that<br><em>converts.</em><br>Systems that<br><em>protect.</em></h1>
+    <p class="hero-p">We architect Regulatory-Shielded, Audit-Proof email ecosystems for supplement brands in the US, UK, and Australia. Assets owned by you, forever.</p>
     <div class="hero-btns">
-      <a href="#work" class="btn-gold">View the Work</a>
+      <a href="#work" class="btn-gold">The Methodology in Practice</a>
       <a href="#contact" class="btn-line">Book a Discovery Call</a>
     </div>
   </div>
   <div class="hero-panel">
-    <div class="panel-lbl">Portfolio At a Glance</div>
+    <div class="panel-lbl">Strategy Infrastructure</div>
     <div class="panel-stats">
       <div class="ps">
-        <div class="ps-n">108</div>
-        <div class="ps-l">Architecture Pts</div>
-        <div style="font-size: 8px; margin-top: 4px; opacity: 0.5;">Proprietary Global System</div>
-      </div>
-      <div class="ps">
-        <div class="ps-n">4</div>
-        <div class="ps-l">Protection Pillars</div>
-        <div style="font-size: 8px; margin-top: 4px; opacity: 0.5;">Multi-Jurisdictional Shielding</div>
+        <div class="ps-n">108-Pt</div>
+        <div class="ps-l">Global Architecture</div>
       </div>
       <div class="ps">
         <div class="ps-n">3</div>
-        <div class="ps-l">Global Markets</div>
-        <div style="font-size: 8px; margin-top: 4px; opacity: 0.5;">US • UK • Australia Compliance</div>
-      </div>
-      <div class="ps">
-        <div class="ps-n">9.5</div>
-        <div class="ps-l">Avg Compliance /10</div>
-        <div style="font-size: 8px; margin-top: 4px; opacity: 0.5;">Independent Auditor Benchmarks</div>
+        <div class="ps-l">Key Jurisdictions</div>
       </div>
     </div>
     <div class="panel-mkts">
       <div class="mkt"><span class="mkt-dot"></span> 🇺🇸 FDA · FTC Regulatory Shield</div>
-      <div class="mkt"><span class="mkt-dot"></span> 🇬🇧 VMD · FSA · ASA Audit-Proof</div>
+      <div class="mkt"><span class="mkt-dot"></span> 🇬🇧 VMD · ASA Audit-Proof</div>
       <div class="mkt"><span class="mkt-dot"></span> 🇦🇺 APVMA · ACCC Certified</div>
     </div>
   </div>
 </section>
-
-<div class="marquee">
-  <div class="marquee-track">
-    <span class="mi">Regulatory Shield <span class="ms">◆</span></span><span class="mi">Audit-Proof Assets <span class="ms">◆</span></span><span class="mi">Direct Response Strategy <span class="ms">◆</span></span><span class="mi">Multi-Jurisdictional Compliance <span class="ms">◆</span></span><span class="mi">Regulatory Shield <span class="ms">◆</span></span><span class="mi">Audit-Proof Assets <span class="ms">◆</span></span><span class="mi">Direct Response Strategy <span class="ms">◆</span></span><span class="mi">Multi-Jurisdictional Compliance <span class="ms">◆</span></span>
-  </div>
-</div>
 
 <section class="sec sec-dark" id="philosophy">
   <div class="eyebrow">The Philosophy</div>
   <div class="phil-grid">
     <div>
       <h2 class="h2">Retention without <em>Exposure.</em></h2>
-      <p class="pb">In the high-stakes pet supplement industry, aggressive marketing claims are the fastest way to get flagged by the FTC or ACCC. Most agencies focus solely on ROI while ignoring the massive legal liability they're building into your customer flows.</p>
-      <div class="pull">We believe copy is a financial asset that must be shielded from regulatory risk while maintaining high emotional resonance.</div>
-      <p class="pb">Our approach combines deep direct-response psychology with a rigorous 108-Point Global Architecture. We don't just "write"; we architect systems that scale without attracting the wrong kind of attention.</p>
+      <p class="pb">Most agencies focus solely on ROI while ignoring the legal liability built into your flows. We believe copy is a financial asset that must be shielded from regulatory risk.</p>
+      <div class="pull">"Copy is either your greatest revenue asset or your biggest legal liability. We ensure it is the former."</div>
     </div>
     <div class="pillars">
       <div class="pillar">
         <div class="pn">PILLAR 01</div>
         <div class="pt">Regulatory Shielding</div>
-        <div class="pb2">Cross-referencing every claim against US, UK, and AU wellness advertising standards.</div>
+        <div class="pb2">Cross-referencing claims against US, UK, and AU wellness advertising standards.</div>
       </div>
       <div class="pillar">
         <div class="pn">PILLAR 02</div>
-        <div class="pt">The 108-Point Architecture</div>
-        <div class="pb2">A comprehensive system that covers every customer touchpoint with strategic precision.</div>
-      </div>
-      <div class="pillar">
-        <div class="pn">PILLAR 03</div>
-        <div class="pt">Absolute IP Ownership</div>
-        <div class="pb2">We build your infrastructure. You own it. No "lock-in" retainers or hidden dependencies.</div>
+        <div class="pt">108-Point Architecture</div>
+        <div class="pb2">A comprehensive global system that replaces fragmented creative with unified infrastructure.</div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="sec sec-darker" id="services">
-  <div class="eyebrow">The Pillars</div>
-  <div class="svc-header">
-    <h2 class="h2" style="margin:0;">Precision <em>Strategy</em> for Global Brands.</h2>
-    <p class="lead" style="max-width:400px;">Deploying high-performance email ecosystems across the world's most profitable (and strict) pet markets.</p>
-  </div>
-  <div class="svc-grid">
-    <div class="svc">
-      <div class="sn">SERVICE 01</div>
-      <div class="st">Compliance-First Lifecycle Flows</div>
-      <div class="sb">We build the "Invisible ROI" engine. From Welcome to Winback, every flow is an audit-proof conversion machine.</div>
-      <div class="pills"><span class="pill">US • UK • AU</span><span class="pill">AUTOMATED</span><span class="pill">COMPLIANT</span></div>
-    </div>
-    <div class="svc">
-      <div class="sn">SERVICE 02</div>
-      <div class="st">Regulatory Copy Audits</div>
-      <div class="sb">A line-by-line surgical analysis of your current assets to identify "Red Flag" claims and conversion leaks.</div>
-      <div class="pills"><span class="pill">RISK ASSESSMENT</span><span class="pill">CLAIMS REVIEW</span></div>
-    </div>
-    <div class="svc">
-      <div class="sn">SERVICE 03</div>
-      <div class="st">Global Expansion Strategy</div>
-      <div class="sb">Mapping your US success to the UK and AU markets, ensuring legal nuances are handled before you hit 'send'.</div>
-      <div class="pills"><span class="pill">CROSS-BORDER</span><span class="pill">STRATEGIC</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec-dark" id="process">
-    <div class="eyebrow">The Workflow</div>
-    <h2 class="h2">How We <em>Engineer</em> Success</h2>
-    <div class="proc-grid">
-      <div class="proc">
-        <div class="pnum">01</div>
-        <div class="proctit">Discovery</div>
-        <div class="procb">A deep-dive analysis of your technical stack and current regulatory compliance posture.</div>
-      </div>
-      <div class="proc">
-        <div class="pnum">02</div>
-        <div class="proctit">Compliance Map</div>
-        <div class="procb">Cross-referencing your claims against US (FDA), UK (VMD), and AU (APVMA) standards.</div>
-      </div>
-      <div class="proc">
-        <div class="pnum">03</div>
-        <div class="proctit">Copy Architecture</div>
-        <div class="procb">Deploying the 108-Point Global Architecture across your entire lifecycle marketing.</div>
-      </div>
-      <div class="proc">
-        <div class="pnum">04</div>
-        <div class="proctit">Deployment</div>
-        <div class="procb">Full integration into your ESP, optimized for deliverability and absolute IP ownership.</div>
-      </div>
-    </div>
 </section>
 
 <section class="sec sec-mid" id="about">
@@ -503,13 +239,12 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
   <div class="about-grid">
     <div class="founder-card">
       <div class="fi">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Derrick Muyanzi">
+        <img src="https://i.ibb.co/LzNf2qG/Derrick-Muyanzi.jpg" alt="Derrick Muyanzi">
       </div>
       <div class="fn">Derrick Muyanzi</div>
       <div class="fs-tag">Founder & Lead Compliance Strategist</div>
       <div class="creds">
-        <div class="cred"><span class="ck">Specialization</span><span class="cv">Pet Wellness</span></div>
-        <div class="cred"><span class="ck">Global Focus</span><span class="cv">US • UK • Australia</span></div>
+        <div class="cred"><span class="ck">Global Focus</span><span class="cv">US • UK • AU</span></div>
         <div class="cred"><span class="ck">Consulting Rate</span><span class="cv">$250 / Hour</span></div>
       </div>
     </div>
@@ -518,8 +253,58 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
       <p class="abody">I am Derrick Muyanzi. I don't just "write emails." I architect retention systems that withstand the scrutiny of international supplement regulations while maintaining high-conversion resonance.</p>
       <p class="abody">Muyanzi Copy Studio was built for brands that have outgrown the "creative freelancer" and require a partner who understands the intersection of global compliance and revenue maximization.</p>
       <div class="aquote">"In the pet wellness sector, your copy is either your greatest asset or your biggest legal liability. We ensure it is the former."</div>
-      <p class="abody">I’ve spent years deconstructing the regulatory frameworks of the FDA, VMD, and APVMA to create a proprietary system that allows brands to speak boldly without the fear of legal pushback. When you work with the Studio, you aren't just getting "words"—you're getting an enterprise-grade marketing asset.</p>
       <a href="#contact" class="btn-gold" style="margin-top:20px;">Schedule an Inquiry</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-darker" id="services">
+  <div class="eyebrow">The Pillars</div>
+  <div class="svc-header">
+    <h2 class="h2" style="margin:0;">Precision <em>Strategy</em> for Global Brands.</h2>
+  </div>
+  <div class="svc-grid">
+    <div class="svc">
+      <div class="sn">01</div>
+      <div class="st">Compliance-First Lifecycle Flows</div>
+      <div class="sb">Welcome, Post-Purchase, and Winback systems built to international standards.</div>
+    </div>
+    <div class="svc">
+      <div class="sn">02</div>
+      <div class="st">Regulatory Copy Audits</div>
+      <div class="sb">Surgical analysis of current assets to identify "Red Flag" claims and conversion leaks.</div>
+    </div>
+    <div class="svc">
+      <div class="sn">03</div>
+      <div class="st">Global Expansion Strategy</div>
+      <div class="sb">Mapping US success to the UK and AU markets with legal nuance.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="process">
+  <div class="eyebrow">The Workflow</div>
+  <h2 class="h2">How It <em>Works</em></h2>
+  <div class="proc-grid">
+    <div class="proc">
+      <span class="pnum">STEP 01</span>
+      <div class="proctit">Discovery</div>
+      <div class="procb">Deep-dive into infrastructure and current regulatory posture.</div>
+    </div>
+    <div class="proc">
+      <span class="pnum">STEP 02</span>
+      <div class="proctit">Compliance Map</div>
+      <div class="procb">Claims cross-referencing against US, UK, and AU standards.</div>
+    </div>
+    <div class="proc">
+      <span class="pnum">STEP 03</span>
+      <div class="proctit">Copy Architecture</div>
+      <div class="procb">Deploying the 108-Point Global Architecture across all flows.</div>
+    </div>
+    <div class="proc">
+      <span class="pnum">STEP 04</span>
+      <div class="proctit">Deployment</div>
+      <div class="procb">Full-system integration and deliverability optimization.</div>
     </div>
   </div>
 </section>
@@ -530,11 +315,10 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
     <div>
       <div class="case-badge"><span>The Methodology in Practice</span></div>
       <h2 class="h2">The ZenTail Retention <em>Ecosystem.</em></h2>
-      <p class="cbody">Scaling a premium pet supplement brand across three continents requires more than just clever subject lines. We implemented the <strong>108-Point Global Architecture</strong> to ensure absolute compliance without sacrificing growth.</p>
-      <p class="cbody">The project involved replacing fragmented campaign thinking with a unified framework that automated high-LTV customer journeys across the US, UK, and AU.</p>
+      <p class="cbody">Implementation of a <strong>108-Point Global Architecture</strong> for a premium supplement brand. We replaced fragmented campaigns with a unified framework automated for high-LTV journeys.</p>
       <div class="cstats">
         <div class="cs">
-          <div class="csn">108-Point</div>
+          <div class="csn">108-Pt</div>
           <div class="csl">Global Architecture System</div>
         </div>
         <div class="cs">
@@ -543,95 +327,31 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
         </div>
       </div>
     </div>
-    <div>
-      <div class="tabs">
-        <button class="tab-btn active" onclick="openTab(event, 't1')">Lifecycle Strategy</button>
-        <button class="tab-btn" onclick="openTab(event, 't2')">Compliance Assets</button>
-      </div>
-      <div id="t1" class="tab-pane active">
-        <div class="ec" onclick="openModal('m1')">
-          <div class="ech"><span class="ety">Welcome Flow</span><span class="era">High-Trust</span></div>
-          <div class="ecb">
-            <h4 class="esub">The "Better Life" Origin Story</h4>
-            <p class="eprev">Establishing brand authority while meeting strict FDA guidelines...</p>
-            <div class="etags"><span class="et">US</span><span class="et ok">AUDIT-PROOF</span></div>
-            <button class="read-btn">View Architecture</button>
-          </div>
-        </div>
-        <div class="ec" onclick="openModal('m2')">
-          <div class="ech"><span class="ety">Post-Purchase</span><span class="era">LTV Focused</span></div>
-          <div class="ecb">
-            <h4 class="esub">The Usage & Compliance Guide</h4>
-            <p class="eprev">Turning supplements into a habit without illegal medical claims...</p>
-            <div class="etags"><span class="et">UK</span><span class="et ok">VMD SYNC</span></div>
-            <button class="read-btn">View Architecture</button>
-          </div>
-        </div>
-        <div class="ec" onclick="openModal('m3')">
-          <div class="ech"><span class="ety">Winback</span><span class="era">Conversion</span></div>
-          <div class="ecb">
-            <h4 class="esub">The Scientific Proof Re-Engagement</h4>
-            <p class="eprev">Leveraging social proof that aligns with ACCC standards...</p>
-            <div class="etags"><span class="et">AU</span><span class="et ok">APVMA ALIGN</span></div>
-            <button class="read-btn">View Architecture</button>
-          </div>
-        </div>
-      </div>
-      <div id="t2" class="tab-pane">
-        <div style="grid-column: span 3; color: var(--mid); font-family: 'DM Mono'; font-size: 11px; text-align: center; padding: 40px;">
-          Compliance mapping assets are protected by NDA. <br>Available for review during Discovery Calls.
-        </div>
-      </div>
+    <div style="background:var(--ink2); padding:40px; border:1px solid var(--border);">
+       <h4 style="font-family:'Playfair Display'; font-size:20px; margin-bottom:15px;">The "Better Life" Origin Story</h4>
+       <p style="color:var(--mid); font-size:14px; margin-bottom:20px;">Establishing brand authority while meeting strict international guidelines. This asset serves as the cornerstone of the Welcome Flow.</p>
+       <span style="font-family:'DM Mono'; font-size:10px; color:var(--gold); border:1px solid var(--gold); padding:4px 8px;">US • UK • AU COMPLIANT</span>
     </div>
   </div>
 </section>
 
 <section class="sec sec-dark" id="pricing">
-  <div class="eyebrow">The Investment</div>
-  <div style="border: 1px dashed var(--gold); padding: 30px; margin-bottom: 50px; background: rgba(201, 168, 76, 0.05);">
-    <h3 class="h2" style="font-size: 24px;">The "No-Retainer" Intellectual Property Guarantee</h3>
-    <p style="font-size: 15px; color: var(--mist);">I do not believe in locking brands into endless monthly retainers for simple maintenance. At Muyanzi Copy Studio, you invest in a complete, high-performance system. You own the 108-point architecture, the compliance maps, and every word of copy outright. Once deployed, the asset is yours to profit from indefinitely.</p>
-  </div>
+  <div class="eyebrow">Investment</div>
   <div class="price-grid">
     <div class="pc">
-      <span class="ptier">Market Entry Suite</span>
-      <span class="psub">Single Territory Strategy</span>
+      <div class="ptier">Market Entry</div>
       <div class="pamt">$6,000</div>
-      <span class="pper">Per Project</span>
-      <ul class="pfeats">
-        <li>Core Lifecycle Architecture (5 Flows)</li>
-        <li>Regional Compliance Mapping (US, UK, or AU)</li>
-        <li>Claims Shielding Analysis</li>
-        <li>108-Point Audit Checklist</li>
-      </ul>
-      <a href="#contact" class="btn-line" style="width:100%; text-align:center;">Inquire for Entry</a>
+      <p style="font-size:13px; color:var(--mid); margin-top:15px;">Single territory lifecycle architecture and compliance mapping.</p>
     </div>
     <div class="pc feat">
-      <span class="pstar">Recommended</span>
-      <span class="ptier">Global Suite</span>
-      <span class="psub">Multi-Market Expansion</span>
+      <div class="ptier">Global Suite</div>
       <div class="pamt">$18,000</div>
-      <span class="pper">Per Project</span>
-      <ul class="pfeats">
-        <li>Full 108-Point Global Architecture</li>
-        <li>Triple-Market Compliance (US + UK + AU)</li>
-        <li>30-Day Post-Deployment Performance Audit</li>
-        <li>Legacy IP Documentation Package</li>
-      </ul>
-      <a href="#contact" class="btn-gold" style="width:100%; text-align:center;">Inquire for Global</a>
+      <p style="font-size:13px; color:var(--mist); margin-top:15px;">Complete 108-Point Architecture across US, UK, and AU markets.</p>
     </div>
     <div class="pc">
-      <span class="ptier">Strategic Audit</span>
-      <span class="psub">Risk Assessment</span>
+      <div class="ptier">Strategic Audit</div>
       <div class="pamt">$2,500</div>
-      <span class="pper">Per Assessment</span>
-      <ul class="pfeats">
-        <li>Line-by-Line Regulatory Claims Review</li>
-        <li>Identification of "Red Flag" Exposures</li>
-        <li>Conversion Friction Heatmap</li>
-        <li>Remediation Roadmap</li>
-      </ul>
-      <a href="#contact" class="btn-line" style="width:100%; text-align:center;">Inquire for Audit</a>
+      <p style="font-size:13px; color:var(--mid); margin-top:15px;">Full regulatory risk assessment and conversion roadmap.</p>
     </div>
   </div>
 </section>
@@ -640,98 +360,51 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
   <div class="eyebrow">The Assessment</div>
   <div class="audit-wrap">
     <div>
-      <h2 class="h2">Identify Your <em>Compliance</em> & Conversion Risks.</h2>
-      <p class="lead">Vague claims or non-compliant language in your email flows aren't just losing you sales—they're putting your merchant accounts and brand reputation at risk.</p>
-      
-      <form class="audit-form" id="auditForm">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-          <div class="af-group">
-            <label class="af-label">Contact Name</label>
-            <input type="text" class="af-input" required placeholder="Derrick Muyanzi">
-          </div>
-          <div class="af-group">
-            <label class="af-label">Work Email</label>
-            <input type="email" class="af-input" required placeholder="name@brand.com">
-          </div>
-        </div>
-        <div class="af-group">
-          <label class="af-label">Primary Market</label>
-          <select class="af-select">
-            <option>US (FDA/FTC)</option>
-            <option>UK (VMD/ASA)</option>
-            <option>Australia (APVMA/ACCC)</option>
-            <option>Global (US/UK/AU)</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-gold" id="auditBtn">Request Risk Assessment →</button>
-        <p class="af-note">Note: We only perform 2 assessments per week for qualified brands.</p>
-        <div id="auditMsg" style="display:none; padding:15px; font-family:'DM Mono'; font-size:10px; margin-top:15px;"></div>
+      <h2 class="h2">Request a <em>Free</em> Audit.</h2>
+      <p class="lead">We identify your compliance risks and conversion leaks in a personalized Loom video.</p>
+      <form class="audit-form">
+        <input type="text" placeholder="Name" style="background:#111; border:1px solid var(--border); padding:12px; color:white; margin-bottom:10px;">
+        <input type="email" placeholder="Work Email" style="background:#111; border:1px solid var(--border); padding:12px; color:white; margin-bottom:10px;">
+        <button class="btn-gold">Request Audit →</button>
       </form>
     </div>
     <div class="audit-right">
-      <div class="audit-step">
-        <div class="audit-step-num">01</div>
-        <div class="audit-step-body">
-          <div class="audit-step-title">Claims Review</div>
-          <div class="audit-step-text">We scan your flows for illegal medical claims and high-risk phrasing that flags regulators.</div>
-        </div>
-      </div>
-      <div class="audit-step">
-        <div class="audit-step-num">02</div>
-        <div class="audit-step-body">
-          <div class="audit-step-title">Friction Audit</div>
-          <div class="audit-step-text">Identifying where customer trust is breaking due to poor positioning or weak proof points.</div>
-        </div>
-      </div>
-      <div class="audit-step">
-        <div class="audit-step-num">03</div>
-        <div class="audit-step-body">
-          <div class="audit-step-title">Strategic Roadmap</div>
-          <div class="audit-step-text">You receive a personalized Loom video walking through the exact fixes required.</div>
-        </div>
-      </div>
+      <h3 style="font-family:'Playfair Display'; margin-bottom:15px;">What you get:</h3>
+      <p style="font-size:14px; color:rgba(255,255,255,0.7); margin-bottom:10px;">• Line-by-line regulatory check.</p>
+      <p style="font-size:14px; color:rgba(255,255,255,0.7); margin-bottom:10px;">• Identification of "Red Flag" claims.</p>
+      <p style="font-size:14px; color:rgba(255,255,255,0.7);">• Strategic conversion roadmap.</p>
     </div>
   </div>
 </section>
 
 <section class="sec sec-dark" id="contact">
-  <div class="eyebrow">The Studio</div>
+  <div class="eyebrow">Contact</div>
   <div class="contact-grid">
     <div>
-      <h2 class="h2">Secure your <em>Architecture.</em></h2>
-      <p class="contact-intro">Whether you're expanding globally or shielding your current assets, we start with a high-level Discovery Call to assess fit.</p>
-      <div class="contact-methods">
-        <a href="mailto:derrick@muyanzicopy.com" class="cmethod">
-          <div class="cmethod-icon em-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <div class="cmethod-info">
-            <div class="cmethod-label">Direct Inquiry</div>
-            <div class="cmethod-val">derrick@muyanzicopy.com</div>
-          </div>
-          <div class="cmethod-arrow">→</div>
-        </a>
-        <a href="https://www.linkedin.com/in/muyanzi-copy-studio-a6b8063b2" target="_blank" class="cmethod">
-          <div class="cmethod-icon li-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </div>
-          <div class="cmethod-info">
-            <div class="cmethod-label">LinkedIn</div>
-            <div class="cmethod-val">/muyanzi-copy-studio</div>
-          </div>
-          <div class="cmethod-arrow">→</div>
-        </a>
-      </div>
+      <h2 class="h2">Let's <em>Connect.</em></h2>
+      <a href="mailto:derrick@muyanzicopy.com" class="cmethod">
+        <div class="cmethod-icon">✉</div>
+        <div>
+          <div class="cmethod-label">Email</div>
+          <div class="cmethod-val">derrick@muyanzicopy.com</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/muyanzi-copy-studio-a6b8063b2" target="_blank" class="cmethod">
+        <div class="cmethod-icon">in</div>
+        <div>
+          <div class="cmethod-label">LinkedIn</div>
+          <div class="cmethod-val">muyanzi-copy-studio</div>
+        </div>
+      </a>
     </div>
-    <div class="contact-right">
-      <div class="cr-label">Studio Availability</div>
-      <h3 class="cr-h3">Secure Your <em>Engagement.</em></h3>
-      <p class="cr-p">We strictly limit ourselves to 4–5 full Global Suite engagements per year to ensure absolute strategic oversight for every partner.</p>
+    <div style="background:var(--green); padding:40px; border:1px solid var(--gold);">
       <div class="availability">
-        <div class="avail-dot"></div>
-        <div class="avail-text">Currently Accepting Inquiries</div>
+        <div class="avail-dot" style="background:#4aaa3a; width:10px; height:10px; border-radius:50%;"></div>
+        <div class="avail-text">Accepting Inquiries</div>
       </div>
-      <a href="#" class="btn-gold" style="width:100%; text-align:center;">Book Discovery Call</a>
+      <h3 class="h2" style="font-size:24px;">Secure Your Slot</h3>
+      <p style="font-size:14px; color:var(--mist); margin-bottom:20px;">We strictly limit engagements to 4–5 Global Suites per year.</p>
+      <a href="mailto:derrick@muyanzicopy.com" class="btn-gold">Book Discovery Call</a>
     </div>
   </div>
 </section>
@@ -739,96 +412,13 @@ footer{background:#050505;padding:44px 56px;display:grid;grid-template-columns:1
 <footer>
   <div class="fb">
     <div class="fb-mark">M</div>
-    <div class="fb-name">Muyanzi Copy Studio</div>
+    <div style="font-family:'DM Mono'; font-size:12px;">Muyanzi Copy Studio</div>
   </div>
-  <div class="fc">
-    &copy; MUYANZI COPY STUDIO · ALL RIGHTS RESERVED
-  </div>
+  <div style="font-family:'DM Mono'; font-size:10px; color:var(--mid); text-align:center;">&copy; MUYANZI COPY STUDIO · ALL RIGHTS RESERVED</div>
   <ul class="fl">
     <li><a href="https://www.linkedin.com/in/muyanzi-copy-studio-a6b8063b2" target="_blank">LinkedIn</a></li>
-    <li><a href="#audit">Risk Assessment</a></li>
   </ul>
 </footer>
 
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal">
-    <div class="modal-top">
-      <div class="modal-meta">
-        <div class="modal-service" id="mServ">Lifecycle Architecture</div>
-        <h3 class="modal-subject" id="mSubj">Subject Line Here</h3>
-        <div class="modal-preview" id="mPrev">Preheader text here...</div>
-      </div>
-      <button class="modal-close" onclick="closeModal()">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-compliance" id="mComp"></div>
-      <div class="email-content" id="mBody"></div>
-    </div>
-  </div>
-</div>
-
-<script>
-function toggleMobileMenu(){document.getElementById('mobile-menu').classList.toggle('open');}
-function openTab(e,id){
-  let panes=document.getElementsByClassName('tab-pane'),btns=document.getElementsByClassName('tab-btn');
-  for(let i=0;i<panes.length;i++){panes[i].classList.remove('active');btns[i].classList.remove('active');}
-  document.getElementById(id).classList.add('active');e.currentTarget.classList.add('active');
-}
-
-const emailData = {
-  m1: {
-    serv: "Lifecycle Strategy • Welcome Series",
-    subj: "Welcome to the pack: What to expect",
-    prev: "Getting started with ZenTail just got easier.",
-    comp: ["US Compliance Checked", "FDA Structure-Function Compliant"],
-    body: "<p class='greeting'>Hello [Name],</p><p>Welcome to <strong>ZenTail</strong>. We believe that a healthier life for your companion starts with science-backed nutrition.</p><p>Over the next few days, we'll walk you through the specifics of our 108-Point Architecture and how we ensure every ingredient serves a purpose.</p><h4>The Mission</h4><p>We're here to bridge the gap between wellness and results.</p><div class='cta-block'><p>Explore our full range of compliant supplements here.</p></div><p class='sign-off'>To their health,<br>The ZenTail Team</p>"
-  },
-  m2: {
-    serv: "LTV Optimization • Post-Purchase",
-    subj: "The Science of Consistency",
-    prev: "How to get the most out of your purchase.",
-    comp: ["UK Compliance Checked", "VMD Guidelines Aligned"],
-    body: "<p class='greeting'>Hello [Name],</p><p>Your order is on the way. But the journey to wellness is about more than just one serving.</p><p>In the UK market, we follow the strict guidelines of the VMD to ensure our usage instructions are clear and accurate.</p><div class='cta-block'><p>View the Usage Protocol</p></div><p class='sign-off'>Derrick Muyanzi<br>Muyanzi Copy Studio</p>"
-  },
-  m3: {
-    serv: "Winback • Retention",
-    subj: "Still thinking about their wellness?",
-    prev: "Re-ignite the journey to a better life.",
-    comp: ["AU Compliance Checked", "ACCC Advertising Standards Aligned"],
-    body: "<p class='greeting'>Hello [Name],</p><p>We noticed it's been a while. In the Australian pet wellness sector, consistency is key to long-term results.</p><p>Our 108-Point Global Architecture is designed to keep you informed without the hype.</p><div class='cta-block'><p>Re-order with 10% Off</p></div><p class='sign-off'>To their health,<br>The ZenTail Team</p>"
-  }
-};
-
-function openModal(id){
-  const d=emailData[id], m=document.getElementById('modalOverlay');
-  document.getElementById('mServ').innerText=d.serv;
-  document.getElementById('mSubj').innerText=d.subj;
-  document.getElementById('mPrev').innerText=d.prev;
-  document.getElementById('mBody').innerHTML=d.body;
-  let cHtml=''; d.comp.forEach(c=>{cHtml+=`<span class='et ok'>${c}</span>`;});
-  document.getElementById('mComp').innerHTML=cHtml;
-  m.classList.add('open');
-}
-function closeModal(){document.getElementById('modalOverlay').classList.remove('open');}
-
-const auditForm = document.getElementById('auditForm');
-if(auditForm){
-  auditForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = document.getElementById('auditBtn'), msg = document.getElementById('auditMsg');
-    btn.textContent = 'Processing...';
-    btn.style.opacity = '0.7';
-    setTimeout(() => {
-      auditForm.reset();
-      btn.textContent = 'Assessment Requested ✓';
-      msg.style.display = 'block';
-      msg.style.background = 'rgba(74,170,65,0.1)';
-      msg.style.border = '1px solid rgba(74,170,65,0.3)';
-      msg.style.color = '#7aaa6a';
-      msg.textContent = 'Request received. Derrick will review your posture and reach out within 48 hours.';
-    }, 1500);
-  });
-}
-</script>
 </body>
 </html>
